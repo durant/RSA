@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0C25881D89401F0082CAAA /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C25861D89401F0082CAAA /* rsa_private_key.pem */; };
+		0A0C25891D89401F0082CAAA /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C25871D89401F0082CAAA /* rsa_public_key.pem */; };
+		0A676AB21D87CC99007C2888 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AB11D87CC99007C2888 /* AppDelegate.m */; };
+		0A676AB51D87CC99007C2888 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AB41D87CC99007C2888 /* main.m */; };
+		0A676AB81D87CC99007C2888 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AB71D87CC99007C2888 /* ViewController.m */; };
+		0A676ABB1D87CC99007C2888 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676ABA1D87CC99007C2888 /* Document.m */; };
+		0A676ABD1D87CC99007C2888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A676ABC1D87CC99007C2888 /* Assets.xcassets */; };
+		0A676AC01D87CC99007C2888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A676ABE1D87CC99007C2888 /* Main.storyboard */; };
+		0A676AC91D87F00F007C2888 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AC81D87F00F007C2888 /* RSA.m */; };
+		0A676ACB1D87F062007C2888 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A676ACA1D87F062007C2888 /* Security.framework */; };
+		0A676AD91D880179007C2888 /* CCMCryptorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AD51D880179007C2888 /* CCMCryptorTest.m */; };
+		0A676AEC1D880182007C2888 /* CCMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676ADF1D880182007C2888 /* CCMBase64.m */; };
+		0A676AED1D880182007C2888 /* CCMCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AE11D880182007C2888 /* CCMCryptor.m */; };
+		0A676AEE1D880182007C2888 /* CCMKeyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AE31D880182007C2888 /* CCMKeyLoader.m */; };
+		0A676AEF1D880182007C2888 /* CCMPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AE51D880182007C2888 /* CCMPrivateKey.m */; };
+		0A676AF01D880182007C2888 /* CCMPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AE81D880182007C2888 /* CCMPublicKey.m */; };
+		0A676AF11D880182007C2888 /* CSSMRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AEB1D880182007C2888 /* CSSMRSACryptor.m */; };
+		0A676AF31D8808BF007C2888 /* jspathDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A676AF21D8808BF007C2888 /* jspathDemo.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0C25861D89401F0082CAAA /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		0A0C25871D89401F0082CAAA /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
+		0A676AAD1D87CC99007C2888 /* RSADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A676AB01D87CC99007C2888 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A676AB11D87CC99007C2888 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A676AB41D87CC99007C2888 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A676AB61D87CC99007C2888 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A676AB71D87CC99007C2888 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A676AB91D87CC99007C2888 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		0A676ABA1D87CC99007C2888 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		0A676ABC1D87CC99007C2888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A676ABF1D87CC99007C2888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A676AC11D87CC99007C2888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A676AC71D87F00F007C2888 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		0A676AC81D87F00F007C2888 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		0A676ACA1D87F062007C2888 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A676AD41D880179007C2888 /* CCMCryptorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMCryptorTest.h; sourceTree = "<group>"; };
+		0A676AD51D880179007C2888 /* CCMCryptorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMCryptorTest.m; sourceTree = "<group>"; };
+		0A676ADE1D880182007C2888 /* CCMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMBase64.h; sourceTree = "<group>"; };
+		0A676ADF1D880182007C2888 /* CCMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMBase64.m; sourceTree = "<group>"; };
+		0A676AE01D880182007C2888 /* CCMCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMCryptor.h; sourceTree = "<group>"; };
+		0A676AE11D880182007C2888 /* CCMCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMCryptor.m; sourceTree = "<group>"; };
+		0A676AE21D880182007C2888 /* CCMKeyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMKeyLoader.h; sourceTree = "<group>"; };
+		0A676AE31D880182007C2888 /* CCMKeyLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMKeyLoader.m; sourceTree = "<group>"; };
+		0A676AE41D880182007C2888 /* CCMPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMPrivateKey.h; sourceTree = "<group>"; };
+		0A676AE51D880182007C2888 /* CCMPrivateKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMPrivateKey.m; sourceTree = "<group>"; };
+		0A676AE61D880182007C2888 /* CCMPrivateKey_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMPrivateKey_internal.h; sourceTree = "<group>"; };
+		0A676AE71D880182007C2888 /* CCMPublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMPublicKey.h; sourceTree = "<group>"; };
+		0A676AE81D880182007C2888 /* CCMPublicKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMPublicKey.m; sourceTree = "<group>"; };
+		0A676AE91D880182007C2888 /* CCMPublicKey_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMPublicKey_internal.h; sourceTree = "<group>"; };
+		0A676AEA1D880182007C2888 /* CSSMRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSMRSACryptor.h; sourceTree = "<group>"; };
+		0A676AEB1D880182007C2888 /* CSSMRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSMRSACryptor.m; sourceTree = "<group>"; };
+		0A676AF21D8808BF007C2888 /* jspathDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jspathDemo.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A676AAA1D87CC99007C2888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A676ACB1D87F062007C2888 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A676AA41D87CC99007C2888 = {
+			isa = PBXGroup;
+			children = (
+				0A676ACA1D87F062007C2888 /* Security.framework */,
+				0A676AAF1D87CC99007C2888 /* RSADemo */,
+				0A676AAE1D87CC99007C2888 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A676AAE1D87CC99007C2888 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A676AAD1D87CC99007C2888 /* RSADemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A676AAF1D87CC99007C2888 /* RSADemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C25861D89401F0082CAAA /* rsa_private_key.pem */,
+				0A0C25871D89401F0082CAAA /* rsa_public_key.pem */,
+				0A676AF21D8808BF007C2888 /* jspathDemo.js */,
+				0A676ADD1D880182007C2888 /* CocoaCryptoMac */,
+				0A676AD41D880179007C2888 /* CCMCryptorTest.h */,
+				0A676AD51D880179007C2888 /* CCMCryptorTest.m */,
+				0A676AC71D87F00F007C2888 /* RSA.h */,
+				0A676AC81D87F00F007C2888 /* RSA.m */,
+				0A676AB01D87CC99007C2888 /* AppDelegate.h */,
+				0A676AB11D87CC99007C2888 /* AppDelegate.m */,
+				0A676AB61D87CC99007C2888 /* ViewController.h */,
+				0A676AB71D87CC99007C2888 /* ViewController.m */,
+				0A676AB91D87CC99007C2888 /* Document.h */,
+				0A676ABA1D87CC99007C2888 /* Document.m */,
+				0A676ABC1D87CC99007C2888 /* Assets.xcassets */,
+				0A676ABE1D87CC99007C2888 /* Main.storyboard */,
+				0A676AC11D87CC99007C2888 /* Info.plist */,
+				0A676AB31D87CC99007C2888 /* Supporting Files */,
+			);
+			path = RSADemo;
+			sourceTree = "<group>";
+		};
+		0A676AB31D87CC99007C2888 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A676AB41D87CC99007C2888 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A676ADD1D880182007C2888 /* CocoaCryptoMac */ = {
+			isa = PBXGroup;
+			children = (
+				0A676ADE1D880182007C2888 /* CCMBase64.h */,
+				0A676ADF1D880182007C2888 /* CCMBase64.m */,
+				0A676AE01D880182007C2888 /* CCMCryptor.h */,
+				0A676AE11D880182007C2888 /* CCMCryptor.m */,
+				0A676AE21D880182007C2888 /* CCMKeyLoader.h */,
+				0A676AE31D880182007C2888 /* CCMKeyLoader.m */,
+				0A676AE41D880182007C2888 /* CCMPrivateKey.h */,
+				0A676AE51D880182007C2888 /* CCMPrivateKey.m */,
+				0A676AE61D880182007C2888 /* CCMPrivateKey_internal.h */,
+				0A676AE71D880182007C2888 /* CCMPublicKey.h */,
+				0A676AE81D880182007C2888 /* CCMPublicKey.m */,
+				0A676AE91D880182007C2888 /* CCMPublicKey_internal.h */,
+				0A676AEA1D880182007C2888 /* CSSMRSACryptor.h */,
+				0A676AEB1D880182007C2888 /* CSSMRSACryptor.m */,
+			);
+			path = CocoaCryptoMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A676AAC1D87CC99007C2888 /* RSADemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A676AC41D87CC99007C2888 /* Build configuration list for PBXNativeTarget "RSADemo" */;
+			buildPhases = (
+				0A676AA91D87CC99007C2888 /* Sources */,
+				0A676AAA1D87CC99007C2888 /* Frameworks */,
+				0A676AAB1D87CC99007C2888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSADemo;
+			productName = RSADemo;
+			productReference = 0A676AAD1D87CC99007C2888 /* RSADemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A676AA51D87CC99007C2888 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kevin;
+				TargetAttributes = {
+					0A676AAC1D87CC99007C2888 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A676AA81D87CC99007C2888 /* Build configuration list for PBXProject "RSADemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A676AA41D87CC99007C2888;
+			productRefGroup = 0A676AAE1D87CC99007C2888 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A676AAC1D87CC99007C2888 /* RSADemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A676AAB1D87CC99007C2888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A676ABD1D87CC99007C2888 /* Assets.xcassets in Resources */,
+				0A0C25881D89401F0082CAAA /* rsa_private_key.pem in Resources */,
+				0A676AC01D87CC99007C2888 /* Main.storyboard in Resources */,
+				0A0C25891D89401F0082CAAA /* rsa_public_key.pem in Resources */,
+				0A676AF31D8808BF007C2888 /* jspathDemo.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A676AA91D87CC99007C2888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A676ABB1D87CC99007C2888 /* Document.m in Sources */,
+				0A676AEE1D880182007C2888 /* CCMKeyLoader.m in Sources */,
+				0A676AC91D87F00F007C2888 /* RSA.m in Sources */,
+				0A676AB81D87CC99007C2888 /* ViewController.m in Sources */,
+				0A676AEC1D880182007C2888 /* CCMBase64.m in Sources */,
+				0A676AB51D87CC99007C2888 /* main.m in Sources */,
+				0A676AED1D880182007C2888 /* CCMCryptor.m in Sources */,
+				0A676AB21D87CC99007C2888 /* AppDelegate.m in Sources */,
+				0A676AD91D880179007C2888 /* CCMCryptorTest.m in Sources */,
+				0A676AF01D880182007C2888 /* CCMPublicKey.m in Sources */,
+				0A676AF11D880182007C2888 /* CSSMRSACryptor.m in Sources */,
+				0A676AEF1D880182007C2888 /* CCMPrivateKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A676ABE1D87CC99007C2888 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A676ABF1D87CC99007C2888 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A676AC21D87CC99007C2888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LiJia Chen (UZW5RZS4RU)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0ed33c1d-9a3b-43ba-91e7-d2bf04b0f954";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A676AC31D87CC99007C2888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LiJia Chen (UZW5RZS4RU)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "0ed33c1d-9a3b-43ba-91e7-d2bf04b0f954";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A676AC51D87CC99007C2888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSADemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.RSADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0A676AC61D87CC99007C2888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSADemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jd.RSADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A676AA81D87CC99007C2888 /* Build configuration list for PBXProject "RSADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A676AC21D87CC99007C2888 /* Debug */,
+				0A676AC31D87CC99007C2888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A676AC41D87CC99007C2888 /* Build configuration list for PBXNativeTarget "RSADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A676AC51D87CC99007C2888 /* Debug */,
+				0A676AC61D87CC99007C2888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A676AA51D87CC99007C2888 /* Project object */;
+}
