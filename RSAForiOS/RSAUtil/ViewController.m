@@ -37,23 +37,27 @@
 	
     NSString *path = [[NSBundle mainBundle] pathForResource:@"jspathDemo" ofType:@"js"];
     originString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-	// Demo: encrypt with public key
-	encWithPubKey = [RSA encryptString:originString publicKey:pubkey];
-	NSLog(@"Enctypted with public key: %@", encWithPubKey);
-    
-	// Demo: decrypt with private key
-	decWithPrivKey = [RSA decryptString:encWithPubKey privateKey:privkey];
-	NSLog(@"Decrypted with private key: %@", decWithPrivKey);
+//	// Demo: encrypt with public key
+//	encWithPubKey = [RSA encryptString:originString publicKey:pubkey];
+//	NSLog(@"Enctypted with public key: %@", encWithPubKey);
+//    
+//	// Demo: decrypt with private key
+//	decWithPrivKey = [RSA decryptString:encWithPubKey privateKey:privkey];
+//	NSLog(@"Decrypted with private key: %@", decWithPrivKey);
     
     // RSA 签名 with private key
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
-    NSData *signData = [RSA PKCSSignBytesSHA256withRSA:data key:privkey];
+    NSData *signData;
     
-    signStr = [signData base64EncodedStringWithOptions:0];
+    signData = [RSA PKCSSignBytesSHA256withRSA:data key:privkey];
+    signStr = [signData base64EncodedStringWithOptions:kNilOptions];
     
     NSLog(@"sign with private key: %@", signStr);
     // RSA 验证签名 with public key
-    signData = [[NSData alloc] initWithBase64EncodedString:signStr options:0];
+    
+//    signStr = @"rkHASfk+wDXLQ3eWkhKA6a4d5HOwcobsXNs5WCYXztPeyuUeRPbwsrWxLlIFh8NSAktiMlfqwDPjlKK5k1y2bbQdXj3K8phkPeFF9xZmVIXLSRP3sFGubtxj3l3m+UGgyWoynag3jUDnZFZfrjqD+VYjlXEjUqxURGnDj9Hn7l4=";
+    
+    signData = [[NSData alloc] initWithBase64EncodedString:signStr options:kNilOptions];
     BOOL res = [RSA PKCSVerifyBytesSHA256withRSA:data signData:signData key:pubkey];
     if (res) {
         NSLog(@"签名验证成功");

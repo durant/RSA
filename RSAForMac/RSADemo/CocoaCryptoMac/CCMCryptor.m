@@ -120,9 +120,9 @@
     uint8_t* signedHashBytes = malloc(signedHashBytesSize);
     memset(signedHashBytes, 0x0, signedHashBytesSize);
     
-    size_t hashBytesSize = CC_SHA256_DIGEST_LENGTH;
+    size_t hashBytesSize = CC_SHA1_DIGEST_LENGTH;
     uint8_t* hashBytes = malloc(hashBytesSize);
-    if (!CC_SHA256([data bytes], (CC_LONG)[data length], hashBytes)) {
+    if (!CC_SHA1([data bytes], (CC_LONG)[data length], hashBytes)) {
         return nil;
     }
     
@@ -181,14 +181,15 @@
     size_t signedHashBytesSize = SecKeyGetBlockSize(keyRef);
     const void* signedHashBytes = [signData bytes];
     
-    size_t hashBytesSize = CC_SHA256_DIGEST_LENGTH;
+    size_t hashBytesSize = CC_SHA1_DIGEST_LENGTH;
     uint8_t* hashBytes = malloc(hashBytesSize);
-    if (!CC_SHA256([data bytes], (CC_LONG)[data length], hashBytes)) {
+    if (!CC_SHA1([data bytes], (CC_LONG)[data length], hashBytes)) {
         return nil;
     }
     
+    
     OSStatus status = SecKeyRawVerify(keyRef,
-                                      kSecPaddingPKCS1SHA1,
+                                      kSecPaddingPKCS1,
                                       hashBytes,
                                       hashBytesSize,
                                       signedHashBytes,

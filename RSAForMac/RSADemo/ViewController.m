@@ -53,7 +53,7 @@
     {
         NSString *path = [[panel URL] path];
         
-        //self.filePath  = path;
+//        self.filePath  = path;
         
         self.pathField.stringValue = path;
         
@@ -64,7 +64,8 @@
     }
 }
 
-- (IBAction)addSignAction:(id)sender {
+- (IBAction)addSignAction:(id)sender
+{
     CCMCryptorTest *test      = [[CCMCryptorTest alloc] init];
     CCMPublicKey *publicKey   = [test loadPublicKeyResource:@"rsa_public_key"];
     CCMPrivateKey *privateKey = [test loadPrivateKeyResource:@"rsa_private_key"];
@@ -75,20 +76,24 @@
     NSData *inputData = [[NSData alloc] initWithContentsOfFile:path];
     
     // RSA 签名 with private key
-    NSData *signData  = [cryptor signData:inputData withPrivateKey:privateKey error:&error];
-    NSString *signStr = [CCMBase64 base64StringFromData:signData];
+    NSData *signData ;
+    NSString *signStr;
+    signData = [cryptor signData:inputData withPrivateKey:privateKey error:&error];
+    signStr = [CCMBase64 base64StringFromData:signData];
     
-    NSLog(@"signStr == %@ ", signStr);
+    NSLog(@"signStr == %@", signStr);
     
+    signStr = @"rkHASfk+wDXLQ3eWkhKA6a4d5HOwcobsXNs5WCYXztPeyuUeRPbwsrWxLlIFh8NSAktiMlfqwDPjlKK5k1y2bbQdXj3K8phkPeFF9xZmVIXLSRP3sFGubtxj3l3m+UGgyWoynag3jUDnZFZfrjqD+VYjlXEjUqxURGnDj9Hn7l4=";
+    signData = [CCMBase64 dataFromBase64String:signStr];
     // RSA 验证签名 with public key
     BOOL f = [cryptor verifySignData:signData data:inputData withPublicKey:publicKey error:&error];
     if(f)
     {
-        NSLog(@" 签名成功 ");
+        NSLog(@" 签名验证成功 ");
     }
     else
     {
-        NSLog(@" 签名失败");
+        NSLog(@" 签名验证失败");
     }
     
     NSData *encryptedData ;
@@ -105,6 +110,7 @@
     decryptedData = [cryptor decryptData:encryptedData withPrivateKey:privateKey error:&error];
     output        = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
     NSLog(@"%@ ", output);
+
 }
 
 - (void)setRepresentedObject:(id)representedObject {
