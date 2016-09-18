@@ -15,7 +15,6 @@
 		0A676ABB1D87CC99007C2888 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676ABA1D87CC99007C2888 /* Document.m */; };
 		0A676ABD1D87CC99007C2888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A676ABC1D87CC99007C2888 /* Assets.xcassets */; };
 		0A676AC01D87CC99007C2888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A676ABE1D87CC99007C2888 /* Main.storyboard */; };
-		0A676AC91D87F00F007C2888 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AC81D87F00F007C2888 /* RSA.m */; };
 		0A676ACB1D87F062007C2888 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A676ACA1D87F062007C2888 /* Security.framework */; };
 		0A676AD91D880179007C2888 /* CCMCryptorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676AD51D880179007C2888 /* CCMCryptorTest.m */; };
 		0A676AEC1D880182007C2888 /* CCMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A676ADF1D880182007C2888 /* CCMBase64.m */; };
@@ -41,8 +40,6 @@
 		0A676ABC1D87CC99007C2888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A676ABF1D87CC99007C2888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A676AC11D87CC99007C2888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A676AC71D87F00F007C2888 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
-		0A676AC81D87F00F007C2888 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		0A676ACA1D87F062007C2888 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0A676AD41D880179007C2888 /* CCMCryptorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMCryptorTest.h; sourceTree = "<group>"; };
 		0A676AD51D880179007C2888 /* CCMCryptorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMCryptorTest.m; sourceTree = "<group>"; };
@@ -101,8 +98,6 @@
 				0A676ADD1D880182007C2888 /* CocoaCryptoMac */,
 				0A676AD41D880179007C2888 /* CCMCryptorTest.h */,
 				0A676AD51D880179007C2888 /* CCMCryptorTest.m */,
-				0A676AC71D87F00F007C2888 /* RSA.h */,
-				0A676AC81D87F00F007C2888 /* RSA.m */,
 				0A676AB01D87CC99007C2888 /* AppDelegate.h */,
 				0A676AB11D87CC99007C2888 /* AppDelegate.m */,
 				0A676AB61D87CC99007C2888 /* ViewController.h */,
@@ -220,7 +215,6 @@
 			files = (
 				0A676ABB1D87CC99007C2888 /* Document.m in Sources */,
 				0A676AEE1D880182007C2888 /* CCMKeyLoader.m in Sources */,
-				0A676AC91D87F00F007C2888 /* RSA.m in Sources */,
 				0A676AB81D87CC99007C2888 /* ViewController.m in Sources */,
 				0A676AEC1D880182007C2888 /* CCMBase64.m in Sources */,
 				0A676AB51D87CC99007C2888 /* main.m in Sources */,

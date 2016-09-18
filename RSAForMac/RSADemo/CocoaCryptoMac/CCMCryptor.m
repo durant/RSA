@@ -184,7 +184,7 @@
     size_t hashBytesSize = CC_SHA1_DIGEST_LENGTH;
     uint8_t* hashBytes = malloc(hashBytesSize);
     if (!CC_SHA1([data bytes], (CC_LONG)[data length], hashBytes)) {
-        return nil;
+        return false;
     }
     
     
